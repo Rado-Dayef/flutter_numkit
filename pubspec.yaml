@@ -1,6 +1,6 @@
 name: flutter_numkit
 description: "A collection of handy numeric extensions for Flutter (Angles, Bool, Duration, EdgeInsets, Gap, Radius, Percentages, Radius, ScreenSizes, Tween.)"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Rado-Dayef/flutter_numkit
 repository: https://github.com/Rado-Dayef/flutter_numkit
 
