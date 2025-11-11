@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.5
+## 1.0.0
 * Initial release of Flutter NumKit.
 * Added extensions for:
     - Angle (degToRad, radToDeg)

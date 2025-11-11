@@ -1,7 +1,7 @@
 # Flutter NumKit
 
-[![flutter_numkit 0.0.5](https://img.shields.io/badge/flutter__numkit-0.0.5-blue)](https://pub.dev/packages/flutter_numkit/install)
-[![repo 0.0.5](https://img.shields.io/badge/repo-flutter__numkit-teal?logo=github&logoColor=white)](https://github.com/Rado-Dayef/flutter_numkit)
+[![flutter_numkit 1.0.0](https://img.shields.io/badge/flutter__numkit-1.0.0-blue)](https://pub.dev/packages/flutter_numkit/install)
+[![repo 1.0.0](https://img.shields.io/badge/repo-flutter__numkit-teal?logo=github&logoColor=white)](https://github.com/Rado-Dayef/flutter_numkit)
 
 A collection of handy numeric extensions for Flutter that makes working with numbers more intuitive
 and reduces boilerplate code.
@@ -24,7 +24,7 @@ Add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_numkit: ^0.0.5
+  flutter_numkit: ^1.0.0
 ```
 
 Then run:
