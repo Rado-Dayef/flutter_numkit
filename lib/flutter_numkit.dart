@@ -1,5 +1,3 @@
-library flutter_numkit;
-
 export 'src/angle_extension.dart';
 export 'src/bool_extension.dart';
 export 'src/duration_extension.dart';

@@ -37,20 +37,22 @@ extension RadiusExtensions on num {
   BorderRadius get bottomRadius => BorderRadius.vertical(bottom: Radius.circular(toDouble()));
 
   /// Creates a circular [BorderRadius] for both top and bottom.
-  /// Usage: `16.verticalBorderRadius`
-  BorderRadius get verticalBorderRadius => BorderRadius.vertical(top: Radius.circular(toDouble()), bottom: Radius.circular(toDouble()));
+  /// If a corner is not provided, it uses the number value.
+  /// Usage: `16.verticalBorderRadius(top: 8)`
+  BorderRadius verticalBorderRadius({double? top, double? bottom}) => BorderRadius.vertical(top: Radius.circular(top ?? toDouble()), bottom: Radius.circular(bottom ?? toDouble()));
 
   /// Creates a circular [BorderRadius] for both left and right.
-  /// Usage: `16.horizontalBorderRadius`
-  BorderRadius get horizontalBorderRadius => BorderRadius.horizontal(left: Radius.circular(toDouble()), right: Radius.circular(toDouble()));
+  /// If a corner is not provided, it uses the number value.
+  /// Usage: `16.horizontalBorderRadius(left: 8)`
+  BorderRadius horizontalBorderRadius({double? left, double? right}) => BorderRadius.horizontal(left: Radius.circular(left ?? toDouble()), right: Radius.circular(right ?? toDouble()));
 
   /// Creates a custom [BorderRadius] where each corner can be set individually.
   /// If a corner is not provided, it uses the number value.
-  /// Usage: 16.onlyBorderRadius(topLeft: 20, bottomRight: 8)
+  /// Usage: `16.onlyBorderRadius(topLeft: 20, bottomRight: 8)`
   BorderRadius onlyBorderRadius({double? topLeft, double? topRight, double? bottomLeft, double? bottomRight}) => BorderRadius.only(
-    topLeft: Radius.circular(topLeft ?? toDouble()),
-    topRight: Radius.circular(topRight ?? toDouble()),
-    bottomLeft: Radius.circular(bottomLeft ?? toDouble()),
-    bottomRight: Radius.circular(bottomRight ?? toDouble()),
-  );
+        topLeft: Radius.circular(topLeft ?? toDouble()),
+        topRight: Radius.circular(topRight ?? toDouble()),
+        bottomLeft: Radius.circular(bottomLeft ?? toDouble()),
+        bottomRight: Radius.circular(bottomRight ?? toDouble()),
+      );
 }

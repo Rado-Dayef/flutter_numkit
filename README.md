@@ -1,7 +1,7 @@
 # Flutter NumKit
 
-[![flutter_numkit 1.0.0](https://img.shields.io/badge/flutter__numkit-1.0.0-blue)](https://pub.dev/packages/flutter_numkit/install)
-[![repo 1.0.0](https://img.shields.io/badge/repo-flutter__numkit-teal?logo=github&logoColor=white)](https://github.com/Rado-Dayef/flutter_numkit)
+[![flutter_numkit 1.0.1](https://img.shields.io/badge/flutter__numkit-1.0.1-blue)](https://pub.dev/packages/flutter_numkit/install)
+[![repo 1.0.1](https://img.shields.io/badge/repo-flutter__numkit-teal?logo=github&logoColor=white)](https://github.com/Rado-Dayef/flutter_numkit)
 
 A collection of handy numeric extensions for Flutter that makes working with numbers more intuitive
 and reduces boilerplate code.
@@ -24,7 +24,7 @@ Add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_numkit: ^1.0.0
+  flutter_numkit: ^1.0.1
 ```
 
 Then run:
@@ -123,9 +123,20 @@ BorderRadius borderRadius8 = 16.onlyBorderRadius(topLeft: 18, topRight: 12);  //
 ### Screen Size Extensions
 
 ```dart
-// Get percentage of screen width/height
-double halfScreenWidth = 50.ofWidth(context);       // 50% of screen width
-double quarterScreenHeight = 25.ofHeight(context);  // 25% of screen height
+// Full screen size
+double width = context.screenWidth;
+double height = context.screenHeight;
+
+// Percentage of screen width / height
+double halfScreenWidth = 50.ofWidth(context);        // 50% of screen width
+double quarterScreenHeight = 25.ofHeight(context);   // 25% of screen height
+
+// Theme & brightness helpers
+ThemeData theme = context.theme;
+bool isDarkMode = context.isDark;
+
+// Hide keyboard
+context.hideKeyboard;
 ```
 
 ### Tween Extensions
